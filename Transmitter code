@@ -1,0 +1,11 @@
+#include <RCSwitch.h>
+RCSwitch mySwitch = RCSwitch();
+void setup() {
+mySwitch.enableTransmit(10);
+}
+void loop() {
+mySwitch.send(222, 24);
+delay(10);
+mySwitch.send(111, 24);
+delay(10);
+}
